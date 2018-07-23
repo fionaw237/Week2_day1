@@ -32,4 +32,9 @@ class TestStudent < MiniTest::Test
     assert_equal("G8", @student1.cohort())
   end
 
+  def test_talk()
+    result = @student2.talk("I can talk!")
+    assert_equal(result, "I can talk!")
+  end
+
 end
