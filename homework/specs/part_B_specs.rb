@@ -14,4 +14,9 @@ class TestTeam < MiniTest::Test
     assert_equal("Dundee City 1", result)
   end
 
+  def test_get_players()
+    result = @team2.players()
+    assert_equal(4, result.length())
+  end
+
 end
