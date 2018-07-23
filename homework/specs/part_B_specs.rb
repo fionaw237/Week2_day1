@@ -19,4 +19,9 @@ class TestTeam < MiniTest::Test
     assert_equal(4, result.length())
   end
 
+  def test_get_coach()
+    result = @team1.coach()
+    assert_equal("Mandy Doogan", result)
+  end
+
 end
