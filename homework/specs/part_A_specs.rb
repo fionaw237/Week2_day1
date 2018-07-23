@@ -22,4 +22,9 @@ class TestStudent < MiniTest::Test
     assert_equal("E20", result)
   end
 
+  def test_changing_name()
+    @student2.change_name("John Smith")
+    assert_equal("John Smith", @student2.name)
+  end
+
 end
