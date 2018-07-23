@@ -24,7 +24,12 @@ class TestStudent < MiniTest::Test
 
   def test_changing_name()
     @student2.change_name("John Smith")
-    assert_equal("John Smith", @student2.name)
+    assert_equal("John Smith", @student2.name())
+  end
+
+  def test_changing_cohort()
+    @student1.change_cohort("G8")
+    assert_equal("G8", @student1.cohort())
   end
 
 end
