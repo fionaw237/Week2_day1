@@ -34,7 +34,7 @@ class TestStudent < MiniTest::Test
 
   def test_talk()
     result = @student2.talk("I can talk!")
-    assert_equal(result, "I can talk!")
+    assert_equal("I can talk!", result)
   end
 
   def test_say_favourite_lamguage()
