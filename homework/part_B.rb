@@ -7,7 +7,7 @@ class Team
     @name = name
     @players = players
     @coach = coach
-    @points = 0    
+    @points = 0
   end
 
   # def name()
@@ -31,7 +31,7 @@ class Team
   end
 
   def find_player(name)
-    @players.include?(name)
+    return @players.include?(name)
   end
 
   def change_points(result)
@@ -39,5 +39,6 @@ class Team
       @points += 3
     end
   end
+  #alternative - pass in true or false - true for win, false for lose - probably better because just testing two possible outcomes.
 
 end
